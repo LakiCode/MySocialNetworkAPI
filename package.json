@@ -1,0 +1,24 @@
+{
+  "name": "mysocialnetworkapi",
+  "version": "1.0.0",
+  "description": "Week 18. Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LakiCode/MySocialNetworkAPI.git"
+  },
+  "keywords": [
+    "NoSQL",
+    "mongoose",
+    "Mongo"
+  ],
+  "author": "Robert Fuke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LakiCode/MySocialNetworkAPI/issues"
+  },
+  "homepage": "https://github.com/LakiCode/MySocialNetworkAPI#readme"
+}
