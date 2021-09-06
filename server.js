@@ -4,49 +4,19 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-const { Note } = require('./models');
-
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/MyChallange18',
-  {
-    useFindAndModify: false,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+//app.use(express.static('public'));
 
-mongoose.set('useCreateIndex', true);
+app.use(require('./routes'));
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mySocialAPI', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+// Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
-app.post('/submit', ({ body }, res) => {
-  // Use the `create()` method to create a new note using the data in `body`
-  // YOUR CODE HERE
-  //
-});
-
-app.get('/all', (req, res) => {
-  // Use the `find()` method to get all of the notes in the database's collection
-  // YOUR CODE HERE
-  //
-});
-
-app.post('/update/:id', ({ params, body }, res) => {
-  // Use the `findOneAndUpdate()` method to update a note using the `_id` and data from the `body`
-  // If there is no note with that `id` in the collection, return an error message.
-  // YOUR CODE HERE
-  //
-});
-
-app.delete('/delete/:id', ({ params }, res) => {
-  // Use the `findOneAndDelete()` method to delete a note using the `_id`
-  // If there is no note with that `id` in the collection, return an error message.
-  // YOUR CODE HERE
-  //
-});
-
-app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
-});
+app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
