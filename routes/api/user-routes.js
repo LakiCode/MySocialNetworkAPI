@@ -18,8 +18,8 @@ router.route('/').get(getAllUser).post(createUser);
 // /api/user/:id
 router.route('/:id').get(getUserById).put(updateUser).delete(deleteUser);
 
-// Set up GET one, PUT, and DELETE at /api/user/:id
-// /api/user/:id
+// Set up post and DELETE at /api/users/:userId/friends/:friendId
+
 router
   .route('/:userId/friends/:friendId')
   .post(createFriend)
