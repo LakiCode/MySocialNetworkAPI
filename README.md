@@ -1,6 +1,6 @@
 # Project Name
 
-MySocialNetworkAPI
+My Social Network API
 
 ## Badge
 
@@ -10,7 +10,7 @@ MySocialNetworkAPI
 
 ## Description
 
-For week 18, challenge is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the Express.js (Links to an external site.) and Mongoose (Links to an external site.) packages, you may also optionally use a JavaScript date library of your choice or the native JavaScript Date object to format timestamps.
+For week 18, challenge is to build an API for a social network web application where users can share their Thoughts, react to friends’ Thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the Express.js (Links to an external site.) and Mongoose (Links to an external site.) packages, you may also optionally use a JavaScript date library of your choice or the native JavaScript Date object to format timestamps.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -42,4 +42,4 @@ rfuke@loffacorp.com
 
 ### Application Demo Video
 
-<a href="https://drive.google.com/file/d/1bq61wWj0gQauiBhyWpxELLKFiaiz_jjt/view" target="_blank">App demo video</a>
+<a href="https://drive.google.com/file/d/1bq61wWj0gQauiBhyWpxELLKFiaiz_jjt/view" target="_blank">My Social Network API demo video</a>
